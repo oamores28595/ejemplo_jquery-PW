@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller 1 · Estructuras de Control y Lógica en JS/jQuery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (cambia de estilo al hacer scroll) ===== -->
+  <nav id="navbar" class="navbar">
+    <span class="navbar__brand">TiendaJS</span>
+    <span id="scrollStatus" class="navbar__status">Arriba de la página</span>
+  </nav>
+
+  <main class="container">
+
+    <!-- ===== SECCIÓN 1: Clic + condicionales ===== -->
+    <section class="card">
+      <h2>1. Contador con condicionales</h2>
+      <p>Cada clic ejecuta una función que evalúa el valor actual y decide qué clase visual aplicar.</p>
+      <div class="counter">
+        <button id="btnDecrementar" class="btn btn--ghost">-1</button>
+        <span id="contador" class="counter__value">0</span>
+        <button id="btnIncrementar" class="btn">+1</button>
+      </div>
+      <p id="mensajeEstado" class="estado">Estado: neutro</p>
+    </section>
+
+    <!-- ===== SECCIÓN 2: Foco/blur + validación ===== -->
+    <section class="card">
+      <h2>2. Validación con eventos de foco</h2>
+      <label for="nombre">Nombre de usuario</label>
+      <input type="text" id="nombre" placeholder="Escribe al menos 3 caracteres...">
+      <p id="ayudaNombre" class="ayuda"></p>
+    </section>
+
+    <!-- ===== SECCIÓN 3: Ciclo for + funciones para generar productos ===== -->
+    <section class="card">
+      <h2>3. Catálogo generado con un ciclo <code>for</code></h2>
+      <p>La función <code>renderProductos()</code> recorre un arreglo y construye tarjetas dinámicamente.</p>
+      <div id="listaProductos" class="productos"></div>
+    </section>
+
+    <!-- Relleno para poder hacer scroll -->
+    <section class="card espaciador">
+      <h2>4. Baja para ver el evento de scroll</h2>
+      <p>El navbar de arriba y el botón inferior reaccionan a la posición del scroll.</p>
+    </section>
+
+  </main>
+
+  <!-- Botón "volver arriba", aparece solo con scroll -->
+  <button id="btnArriba" class="btn-flotante" title="Volver arriba">↑</button>
+
+  <!-- jQuery vía CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Nuestro script -->
+  <script src="script.js"></script>
+</body>
+</html>
