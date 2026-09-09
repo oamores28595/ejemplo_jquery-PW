@@ -1,14 +1,3 @@
-/* ============================================================
-   Taller 1: Estructuras de Control y Lógica en JS/jQuery
-   ============================================================
-   Este archivo se organiza en 4 bloques, uno por cada sección
-   de index.html. Cada bloque muestra:
-   - captura de eventos (clic, foco/blur, scroll)
-   - condicionales (if / else if / else)
-   - ciclos (for)
-   - funciones reutilizables
-   ============================================================ */
-
 $(document).ready(function () {
 
   /* ==========================================================
